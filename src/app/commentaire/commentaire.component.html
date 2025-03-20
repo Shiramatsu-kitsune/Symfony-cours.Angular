@@ -1,0 +1,5 @@
+<h2>Liste des commentaires</h2>
+<ul>
+  <li *ngFor="let commentaire of commentaires">{{ commentaire.contenu }}</li>
+</ul>
+<button (click)="ajouter()">Ajouter un commentaire</button>
