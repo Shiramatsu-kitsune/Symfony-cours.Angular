@@ -17,4 +17,8 @@ export class CommentaireService {
       post_id: postId
     });
   }
+  supprimerCommentaire(id: number) {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
+  
 }

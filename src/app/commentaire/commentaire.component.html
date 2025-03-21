@@ -3,3 +3,10 @@
   <li *ngFor="let commentaire of commentaires">{{ commentaire.contenu }}</li>
 </ul>
 <button (click)="ajouter()">Ajouter un commentaire</button>
+<ul>
+    <li *ngFor="let commentaire of commentaires">
+      {{ commentaire.contenu }}
+      <button (click)="supprimer(commentaire.id)">Supprimer</button>
+    </li>
+  </ul>
+  

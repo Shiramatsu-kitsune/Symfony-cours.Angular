@@ -21,4 +21,12 @@ export class CommentaireComponent implements OnInit {
       alert('Commentaire ajouté !');
     });
   }
+
+  supprimer(id: number) {
+    this.commentaireService.supprimerCommentaire(id).subscribe(() => {
+      alert('Commentaire supprimé !');
+      this.ngOnInit(); // recharge les commentaires
+    });
+  }
+  
 }
